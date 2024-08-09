@@ -1,0 +1,277 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main_content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music_player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.7rem;
+}
+
+.nav_option {
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.7rem;
+}
+
+.nav_option:hover {
+    opacity: 1;
+}
+
+.nav_option i {
+    height: 20px;
+    font-size: 1.25rem;
+    /* Corrected to rem unit */
+    width: 20px;
+}
+
+.nav_option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    height: 100%;
+    padding: 0.5rem 0.7rem;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon1 img {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 1rem;
+}
+
+.icon2 {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icon2 i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icon2 i:hover {
+    opacity: 1;
+}
+
+.box1 {
+    background-color: #232323;
+    border-radius: 0.9rem;
+    padding: 0.75rem 1rem;
+    margin-top: 8px;
+    margin-bottom: 1.75rem;
+    height: 8rem;
+}
+
+.badge {
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    border-radius: 100px;
+    height: 2rem;
+    width: fit-content;
+}
+
+.box1p1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.box1p2 {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    /* z-index: 10; */
+}
+
+.sticy-nav .naviocns {
+    margin-left: 0.75rem;
+}
+
+.stickynavoptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitem {
+    margin-right: 1rem;
+}
+
+.darkbutton {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card {
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cardscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.cardimg {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.info {
+    font: 0.85rem;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music_player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+}
+
+.playercontrolicon {
+    height: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+}
+
+.playercontrol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playercontrolicon:hover {
+    opacity: 1;
+}
+
+.playback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progressbar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progressbar::-webkit-slider-thumb {
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
